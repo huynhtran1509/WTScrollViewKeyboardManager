@@ -19,6 +19,9 @@
 		22BBA2E2180330160097DEC6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BBA2CA180330160097DEC6 /* UIKit.framework */; };
 		22BBA2EA180330160097DEC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22BBA2E8180330160097DEC6 /* InfoPlist.strings */; };
 		22BBA2EC180330160097DEC6 /* WTScrollViewKeyboardManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BBA2EB180330160097DEC6 /* WTScrollViewKeyboardManagerTests.m */; };
+		22BBA2F9180330450097DEC6 /* WTScrollViewKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BBA2F8180330450097DEC6 /* WTScrollViewKeyboardManager.m */; };
+		22BBA2FE180330660097DEC6 /* WTRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BBA2FC180330660097DEC6 /* WTRootViewController.m */; };
+		22BBA2FF180330660097DEC6 /* WTRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22BBA2FD180330660097DEC6 /* WTRootViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,11 @@
 		22BBA2E7180330160097DEC6 /* WTScrollViewKeyboardManagerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WTScrollViewKeyboardManagerTests-Info.plist"; sourceTree = "<group>"; };
 		22BBA2E9180330160097DEC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		22BBA2EB180330160097DEC6 /* WTScrollViewKeyboardManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTScrollViewKeyboardManagerTests.m; sourceTree = "<group>"; };
+		22BBA2F7180330450097DEC6 /* WTScrollViewKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTScrollViewKeyboardManager.h; sourceTree = "<group>"; };
+		22BBA2F8180330450097DEC6 /* WTScrollViewKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTScrollViewKeyboardManager.m; sourceTree = "<group>"; };
+		22BBA2FB180330660097DEC6 /* WTRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTRootViewController.h; sourceTree = "<group>"; };
+		22BBA2FC180330660097DEC6 /* WTRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTRootViewController.m; sourceTree = "<group>"; };
+		22BBA2FD180330660097DEC6 /* WTRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTRootViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +115,9 @@
 		22BBA2CC180330160097DEC6 /* WTScrollViewKeyboardManager */ = {
 			isa = PBXGroup;
 			children = (
-				22BBA2D5180330160097DEC6 /* WTAppDelegate.h */,
-				22BBA2D6180330160097DEC6 /* WTAppDelegate.m */,
+				22BBA2FA180330520097DEC6 /* WTRootViewController */,
+				22BBA2F6180330350097DEC6 /* WTScrollViewKeyboardManager */,
+				22BBA2F51803301C0097DEC6 /* WTAppDelegate */,
 				22BBA2D8180330160097DEC6 /* Images.xcassets */,
 				22BBA2CD180330160097DEC6 /* Supporting Files */,
 			);
@@ -142,6 +151,34 @@
 				22BBA2E8180330160097DEC6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22BBA2F51803301C0097DEC6 /* WTAppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				22BBA2D5180330160097DEC6 /* WTAppDelegate.h */,
+				22BBA2D6180330160097DEC6 /* WTAppDelegate.m */,
+			);
+			name = WTAppDelegate;
+			sourceTree = "<group>";
+		};
+		22BBA2F6180330350097DEC6 /* WTScrollViewKeyboardManager */ = {
+			isa = PBXGroup;
+			children = (
+				22BBA2F7180330450097DEC6 /* WTScrollViewKeyboardManager.h */,
+				22BBA2F8180330450097DEC6 /* WTScrollViewKeyboardManager.m */,
+			);
+			name = WTScrollViewKeyboardManager;
+			sourceTree = "<group>";
+		};
+		22BBA2FA180330520097DEC6 /* WTRootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				22BBA2FB180330660097DEC6 /* WTRootViewController.h */,
+				22BBA2FC180330660097DEC6 /* WTRootViewController.m */,
+				22BBA2FD180330660097DEC6 /* WTRootViewController.xib */,
+			);
+			name = WTRootViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22BBA2FF180330660097DEC6 /* WTRootViewController.xib in Resources */,
 				22BBA2D1180330160097DEC6 /* InfoPlist.strings in Resources */,
 				22BBA2D9180330160097DEC6 /* Images.xcassets in Resources */,
 			);
@@ -242,6 +280,8 @@
 			files = (
 				22BBA2D3180330160097DEC6 /* main.m in Sources */,
 				22BBA2D7180330160097DEC6 /* WTAppDelegate.m in Sources */,
+				22BBA2F9180330450097DEC6 /* WTScrollViewKeyboardManager.m in Sources */,
+				22BBA2FE180330660097DEC6 /* WTRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
