@@ -36,6 +36,9 @@
 
 - (void)setupKeyboardManager
 {
+    WTScrollViewKeyboardManager *manager = [[WTScrollViewKeyboardManager alloc] initWithScrollView:[self scrollView] viewController:self];
+    [self setKeyboardManager:manager];
+    
     [self setKeyboardManager:[[WTScrollViewKeyboardManager alloc] initWithScrollView:[self scrollView] viewController:self]];
 }
 
