@@ -14,6 +14,7 @@
 
 @property (nonatomic, weak) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, strong) WTScrollViewKeyboardManager *keyboardManager;
+@property (nonatomic, strong) IBOutletCollection(UITextField) NSArray *textFields;
 
 @end
 
@@ -36,6 +37,11 @@
 - (void)setupKeyboardManager
 {
     [self setKeyboardManager:[[WTScrollViewKeyboardManager alloc] initWithScrollView:[self scrollView] viewController:self]];
+}
+
+- (IBAction)submitButtonPressed:(id)sender
+{
+    [[self textFields] makeObjectsPerformSelector:@selector(resignFirstResponder)];
 }
 
 @end
