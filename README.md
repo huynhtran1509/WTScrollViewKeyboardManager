@@ -1,6 +1,11 @@
 WTScrollViewKeyboardManager
 ===========================
 
+Deprecated
+==========
+
+Please use [WTAScrollViewKeyboardManager](https://github.com/willowtreeapps/WTAScrollViewKeyboardManager) instead.
+
 A class to manage scroll view content and scroll indicator insets when the keyboard appears and disappears
 
 Features
